@@ -1,1 +1,1611 @@
+<header class="rs-header" role="banner">
+  <div class="rs-header__inner">
+
+    <!-- Brand / Logo -->
+    <a class="rs-brand" href="https://kakatbarilea-prog.github.io/bni-homepage/" aria-label="BNI Rock Solid Referrals - Home">
+      <img
+        class="rs-brand__logo"
+        src="https://d34hmiuaex7c0.cloudfront.net/6568/uploads/cmaspages/gallery/galleryitem_1759854726598.png"
+        alt="BNI Rock Solid Referrals"
+      />
+    </a>
+
+    <!-- Desktop Nav -->
+    <nav class="rs-nav" aria-label="Primary navigation">
+      <a class="rs-nav__link is-active" href="https://kakatbarilea-prog.github.io/bni-homepage/">Home</a>
+
+      <!-- Dropdown (CSS-only) -->
+      <div class="rs-nav__dropdown">
+        <a class="rs-nav__link rs-nav__dropbtn" href="https://kakatbarilea-prog.github.io/bni-chapter-leadership/" aria-haspopup="true" aria-expanded="false">
+          Our Chapter
+        </a>
+
+        <div class="rs-nav__menu" role="menu" aria-label="Chapter Members">
+          <a role="menuitem" href="https://kakatbarilea-prog.github.io/bni-chapter-leadership/">Chapter Leadership</a>
+          <a role="menuitem" href="https://kakatbarilea-prog.github.io/bni-chamber-members-directory/">Member Directory</a>
+          <a role="menuitem" class="rs-membersOnlyLink" href="https://kakatbarilea-prog.github.io/bni-seek-of-the-week-submissions/">Seeks of the Week</a>
+        </div>
+      </div>
+
+      <!-- UPDATED: Meetings & Events Dropdown -->
+      <div class="rs-nav__dropdown">
+        <a class="rs-nav__link rs-nav__dropbtn" href="https://kakatbarilea-prog.github.io/bni-meetings-and-events" aria-haspopup="true" aria-expanded="false">
+          Meetings &amp; Events
+        </a>
+
+        <div class="rs-nav__menu" role="menu" aria-label="Meetings & Events">
+          <a role="menuitem" href="https://kakatbarilea-prog.github.io/bni-weekly-meetings">Weekly Meetings</a>
+          <a role="menuitem" href="https://kakatbarilea-prog.github.io/bni-upcoming-events">Upcoming Events</a>
+          <a role="menuitem" class="rs-membersOnlyLink" href="https://kakatbarilea-prog.github.io/bni-member-events">Member Promotions &amp; Events</a>
+          <a role="menuitem" class="rs-membersOnlyLink" href="https://kakatbarilea-prog.github.io/bni-post-an-event">Post an Event</a>
+        </div>
+      </div>
+
+      <a class="rs-nav__link" href="https://kakatbarilea-prog.github.io/bni-gallery">Gallery</a>
+      <a class="rs-nav__link" href="https://kakatbarilea-prog.github.io/bni-news">News</a>
+    </nav>
+
+    <!-- Right -->
+    <div class="rs-actions">
+      <a class="rs-btn rs-btn--primary rs-desktopOnly" href="https://kakatbarilea-prog.github.io/bni-member-login" id="rsMemberLoginLink">Member Log-in</a>
+
+      <!-- Mobile menu button (JS toggles panel) -->
+      <button class="rs-iconbtn" id="rsMenuBtn" type="button" aria-label="Open menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 6h16a1 1 0 1 0 0-2H4a1 1 0 1 0 0 2Zm16 7H4a1 1 0 0 0 0 2h16a1 1 0 1 0 0-2Zm0 7H4a1 1 0 0 0 0 2h16a1 1 0 1 0 0-2Z"/>
+        </svg>
+      </button>
+    </div>
+
+  </div>
+
+  <!-- Mobile Panel -->
+  <div class="rs-mobile" id="rsMobilePanel" hidden>
+    <div class="rs-mobile__inner">
+      <a href="https://kakatbarilea-prog.github.io/bni-homepage/" class="rs-mobile__link">Home</a>
+      <a href="https://kakatbarilea-prog.github.io/bni-chapter-leadership/">Our Chapter — Chapter Leadership</a>
+      <a href="https://kakatbarilea-prog.github.io/bni-chamber-members-directory/" class="rs-mobile__link">Our Chapter — Member Directory</a>
+      <a href="https://kakatbarilea-prog.github.io/bni-seek-of-the-week-submissions/" class="rs-mobile__link rs-membersOnlyLink">Chapter Members — Seeks of the Week</a>
+
+      <!-- UPDATED: Meetings & Events children in mobile -->
+      <a href="https://kakatbarilea-prog.github.io/bni-weekly-meetings" class="rs-mobile__link">Meetings &amp; Events — Weekly Meetings</a>
+      <a href="https://kakatbarilea-prog.github.io/bni-upcoming-events" class="rs-mobile__link">Meetings &amp; Events — Upcoming Events</a>
+      <a href="https://kakatbarilea-prog.github.io/bni-member-events" class="rs-mobile__link rs-membersOnlyLink">Meetings &amp; Events — Member Promotions &amp; Events</a>
+      <a href="https://kakatbarilea-prog.github.io/bni-post-an-event" class="rs-mobile__link rs-membersOnlyLink">Meetings &amp; Events — Post an Event</a>
+
+      <a href="https://kakatbarilea-prog.github.io/bni-gallery" class="rs-mobile__link">Gallery</a>
+      <a href="https://kakatbarilea-prog.github.io/bni-news" class="rs-mobile__link">News</a>
+
+      <div class="rs-mobile__cta">
+        <a class="rs-btn rs-btn--primary rs-btn--block" href="https://kakatbarilea-prog.github.io/bni-member-login" id="rsMemberLoginLinkMobile">Member Log-in</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- MEMBERS ONLY POPUP (HEADER VERSION) -->
+<div class="rsH-membersModal" id="rsHMembersModal" hidden aria-hidden="true">
+  <div class="rsH-membersModal__backdrop" data-close="1"></div>
+
+  <div class="rsH-membersModal__card" role="dialog" aria-modal="true" aria-label="Members only">
+    <div class="rsH-membersModal__badge">Members Only</div>
+    <div class="rsH-membersModal__title">This page is available to chapter members.</div>
+    <div class="rsH-membersModal__text">
+      Please log in to access member pages such as Seeks, Member Events, and Event Submissions.
+    </div>
+
+    <div class="rsH-membersModal__actions">
+      <button class="rsH-membersModal__btn rsH-membersModal__btn--secondary" type="button" data-close="1">
+        Close &amp; Continue
+      </button>
+      <a class="rsH-membersModal__btn rsH-membersModal__btn--primary" href="https://kakatbarilea-prog.github.io/bni-member-login" id="rsHModalLoginBtn">
+        Member Log-in
+      </a>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* -------- HEADER ONLY VARIABLES (scoped) -------- */
+  .rs-header{
+    --rs-red:#CF2030;
+    --rs-redDark:#b61b29;
+    --rs-ink:#111827;
+    --rs-line:#E5E7EB;
+    --rs-bg: rgba(255,255,255,.92);
+    --rs-shadow: 0 10px 26px rgba(0,0,0,.10);
+    --rs-h: 78px;
+  }
+
+  /* Scope all typography + box sizing to header only */
+  .rs-header, .rs-header *{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing:border-box;
+  }
+
+  .rs-header{
+    position:sticky; top:0; z-index:999;
+    width:100%;
+    background: var(--rs-bg);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(229,231,235,.95);
+  }
+
+  .rs-header__inner{
+    width:100%;
+    height:var(--rs-h);
+    padding:0 26px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:18px;
+  }
+
+  .rs-brand{
+    display:flex;
+    align-items:center;
+    text-decoration:none;
+    flex:0 0 auto;
+  }
+
+  /* Prevent stretch */
+  .rs-brand__logo{
+    height:40px;
+    width:auto;
+    max-width:220px;
+    object-fit:contain;
+    display:block;
+  }
+
+  .rs-nav{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:6px;
+    flex:1;
+    min-width:0;
+  }
+
+  .rs-nav__link{
+    display:inline-flex;
+    align-items:center;
+    padding:10px 12px;
+    border-radius:12px;
+    font-weight:600;
+    font-size:14px;
+    color:var(--rs-ink);
+    text-decoration:none;
+    white-space:nowrap;
+    transition:.15s ease;
+  }
+  .rs-nav__link:hover{background:#F6F7FB}
+
+  .rs-nav__link.is-active{position:relative}
+  .rs-nav__link.is-active::after{
+    content:"";
+    position:absolute;
+    left:12px; right:12px; bottom:6px;
+    height:2px;
+    border-radius:999px;
+    background:var(--rs-red);
+  }
+
+  /* Dropdown (CSS-only) with hover bridge */
+  .rs-nav__dropdown{position:relative}
+  .rs-nav__dropbtn{cursor:default}
+
+  .rs-nav__menu{
+    position:absolute;
+    top:100%;
+    left:0;
+    margin-top:8px;
+    min-width:240px;
+    background:#fff;
+    border:1px solid var(--rs-line);
+    border-radius:14px;
+    box-shadow:var(--rs-shadow);
+    padding:8px;
+    display:none;
+    z-index:50;
+  }
+
+  .rs-nav__dropdown::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:100%;
+    width:260px;
+    height:18px;
+    background:transparent;
+    display:none;
+    z-index:40;
+  }
+
+  .rs-nav__menu a{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+    padding:11px 12px;
+    border-radius:12px;
+    font-weight:600;
+    font-size:14px;
+    color:var(--rs-ink);
+    text-decoration:none;
+    transition:.15s ease;
+  }
+  .rs-nav__menu a:hover{background:#F6F7FB}
+
+  .rs-nav__dropdown:hover .rs-nav__menu,
+  .rs-nav__dropdown:focus-within .rs-nav__menu{
+    display:block;
+  }
+  .rs-nav__dropdown:hover::before,
+  .rs-nav__dropdown:focus-within::before{
+    display:block;
+  }
+
+  .rs-actions{
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+    gap:10px;
+    flex:0 0 auto;
+  }
+
+  /* Button with hover animation */
+  .rs-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:11px 16px;
+    border-radius:12px;
+    border:1px solid var(--rs-line);
+    background:#fff;
+    font-weight:600;
+    font-size:14px;
+    color:var(--rs-ink);
+    text-decoration:none;
+    white-space:nowrap;
+    position:relative;
+    overflow:hidden;
+    transition: transform .18s ease, box-shadow .18s ease, filter .18s ease;
+  }
+
+  .rs-btn--primary{
+    border-color:transparent;
+    background:var(--rs-red);
+    color:#fff;
+  }
+
+  .rs-btn--primary::after{
+    content:"";
+    position:absolute;
+    top:-30%;
+    left:-60%;
+    width:40%;
+    height:160%;
+    transform: rotate(20deg);
+    background: rgba(255,255,255,.25);
+    opacity:0;
+    transition: opacity .2s ease;
+  }
+
+  .rs-btn--primary:hover{
+    transform: translateY(-1px);
+    box-shadow: 0 10px 18px rgba(0,0,0,.14);
+    filter: brightness(.98);
+  }
+  .rs-btn--primary:hover::after{
+    opacity:1;
+    animation: rsSheen .9s ease forwards;
+  }
+
+  @keyframes rsSheen{
+    0%{left:-60%}
+    100%{left:120%}
+  }
+
+  .rs-desktopOnly{display:inline-flex}
+
+  /* Mobile hamburger */
+  .rs-iconbtn{
+    width:44px;height:44px;
+    border-radius:12px;
+    border:1px solid var(--rs-line);
+    background:#fff;
+    display:none;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    transition: transform .18s ease, box-shadow .18s ease;
+  }
+  .rs-iconbtn:hover{
+    transform: translateY(-1px);
+    box-shadow: 0 10px 18px rgba(0,0,0,.10);
+  }
+  .rs-iconbtn svg{width:20px;height:20px; fill:#111827; display:block}
+
+  /* Mobile panel */
+  .rs-mobile{
+    border-top:1px solid var(--rs-line);
+    background:#fff;
+  }
+  .rs-mobile__inner{
+    padding:14px 18px 18px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+  }
+  .rs-mobile__link{
+    padding:12px 12px;
+    border-radius:12px;
+    font-weight:600;
+    background:#F7F7FA;
+    border:1px solid #EEF0F6;
+    text-decoration:none;
+    color:var(--rs-ink);
+    transition:.15s ease;
+  }
+  .rs-mobile__link:hover{background:#F1F3F8}
+  .rs-mobile__cta{padding-top:6px}
+  .rs-btn--block{width:100%}
+
+  @media (max-width: 980px){
+    .rs-nav{display:none}
+    .rs-iconbtn{display:inline-flex}
+    .rs-desktopOnly{display:none}
+    .rs-header__inner{padding:0 16px}
+    .rs-brand__logo{height:36px; max-width:180px;}
+  }
+
+  @media (max-width: 420px){
+    .rs-header{--rs-h:72px}
+    .rs-brand__logo{max-width:150px;}
+  }
+
+  /* =========================
+     HEADER MODAL (unique classes so nothing overrides it)
+  ========================= */
+  .rsH-membersModal{
+    position:fixed;
+    inset:0;
+    z-index:5000;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:18px;
+  }
+  .rsH-membersModal[hidden]{display:none !important;}
+
+  .rsH-membersModal__backdrop{
+    position:absolute;
+    inset:0;
+    background: rgba(17,24,39,.62);
+    backdrop-filter: blur(4px);
+  }
+
+  .rsH-membersModal__card{
+    position:relative;
+    width:100%;
+    max-width:420px;
+    border-radius:20px;
+    border:1px solid rgba(229,231,235,.55);
+    background:#fff;
+    box-shadow: 0 22px 56px rgba(0,0,0,.22);
+    padding:18px 18px 16px;
+    text-align:left;
+  }
+
+  .rsH-membersModal__badge{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:8px 12px;
+    border-radius:999px;
+    font-weight:900;
+    font-size:12px;
+    letter-spacing:.02em;
+    color:#CF2030;
+    background: rgba(207,32,48,.10);
+    border: 1px solid rgba(207,32,48,.18);
+    margin-bottom:12px;
+  }
+
+  .rsH-membersModal__title{
+    font-size:16px;
+    font-weight:900;
+    color:#111827;
+    margin-bottom:8px;
+  }
+
+  .rsH-membersModal__text{
+    font-size:14px;
+    line-height:1.6;
+    color:#4B5563;
+    margin-bottom:14px;
+  }
+
+  .rsH-membersModal__actions{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    margin-top:8px;
+  }
+
+  .rsH-membersModal__btn{
+    display:inline-flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    gap:8px !important;
+    padding:11px 14px !important;
+    border-radius:14px !important;
+    font-weight:900 !important;
+    font-size:13px !important;
+    text-decoration:none !important;
+    cursor:pointer !important;
+    border:1px solid #E5E7EB !important;
+    transition:.18s ease !important;
+    flex:1 !important;
+    min-width:160px !important;
+    line-height:1 !important;
+  }
+
+  .rsH-membersModal__btn:hover{
+    transform: translateY(-1px);
+    box-shadow: 0 12px 22px rgba(0,0,0,.12);
+  }
+
+  .rsH-membersModal__btn--secondary{
+    background:#F3F4F6 !important;
+    color:#111827 !important;
+    border-color:#E5E7EB !important;
+  }
+
+  /* ✅ HARD FIX: anchor login button forced red + white */
+  .rsH-membersModal__btn--primary,
+  a.rsH-membersModal__btn--primary,
+  a#rsHModalLoginBtn{
+    background:#CF2030 !important;
+    color:#ffffff !important;
+    border-color:transparent !important;
+  }
+  .rsH-membersModal__btn--primary:hover,
+  a.rsH-membersModal__btn--primary:hover,
+  a#rsHModalLoginBtn:hover{
+    background:#b61b29 !important;
+    color:#ffffff !important;
+  }
+
+  @media (max-width: 520px){
+    .rsH-membersModal__btn{
+      width:100%;
+      min-width:unset;
+      flex: 1 1 100%;
+    }
+  }
+</style>
+
+<script>
+  /* Minimal / necessary only: mobile hamburger open/close */
+  (function(){
+    const btn = document.getElementById('rsMenuBtn');
+    const panel = document.getElementById('rsMobilePanel');
+    if(!btn || !panel) return;
+
+    function close(){
+      panel.setAttribute('hidden','');
+      btn.setAttribute('aria-expanded','false');
+    }
+
+    btn.addEventListener('click', () => {
+      const isHidden = panel.hasAttribute('hidden');
+      if(isHidden){
+        panel.removeAttribute('hidden');
+        btn.setAttribute('aria-expanded','true');
+      }else{
+        close();
+      }
+    });
+
+    panel.addEventListener('click', (e) => {
+      if(e.target && e.target.tagName === 'A') close();
+    });
+
+    window.addEventListener('resize', () => {
+      if(window.innerWidth > 980) close();
+    });
+  })();
+
+  // HEADER MODAL GATING
+  (function(){
+    const modal = document.getElementById('rsHMembersModal');
+    if(!modal) return;
+
+    const loginHref =
+      (document.getElementById('rsMemberLoginLink') && document.getElementById('rsMemberLoginLink').getAttribute('href')) ||
+      (document.getElementById('rsMemberLoginLinkMobile') && document.getElementById('rsMemberLoginLinkMobile').getAttribute('href')) ||
+      '#';
+
+    const modalLoginBtn = document.getElementById('rsHModalLoginBtn');
+    if(modalLoginBtn) modalLoginBtn.setAttribute('href', loginHref);
+
+    modal.setAttribute('hidden','');
+    modal.setAttribute('aria-hidden','true');
+
+    function openModal(){
+      modal.removeAttribute('hidden');
+      modal.setAttribute('aria-hidden','false');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal(){
+      modal.setAttribute('hidden','');
+      modal.setAttribute('aria-hidden','true');
+      document.body.style.overflow = '';
+    }
+
+    document.addEventListener('click', function(e){
+      const gated = e.target.closest('.rs-membersOnlyLink');
+      if(!gated) return;
+      e.preventDefault();
+      openModal();
+    });
+
+    modal.addEventListener('click', function(e){
+      if(e.target && e.target.getAttribute('data-close') === '1') closeModal();
+    });
+
+    document.addEventListener('keydown', function(e){
+      if(e.key === 'Escape' && !modal.hasAttribute('hidden')) closeModal();
+    });
+  })();
+</script>
+
+
+
+
+<!--start-->
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.17.0/dist/algoliasearch.umd.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<style>
+  /* ===== Page Container ===== */
+  .rs-news{
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 22px;
+    color: var(--rs-ink, #111827);
+    font-family: var(--rs-font, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif);
+  }
+
+  /* ===== Hero ===== */
+  .rs-news-hero{
+    background: linear-gradient(135deg, rgba(207,32,48,.10), rgba(17,24,39,.03));
+    border: 1px solid var(--rs-line, #E5E7EB);
+    border-radius: 22px;
+    padding: 18px 18px;
+    box-shadow: 0 10px 26px rgba(17,24,39,.06);
+    position: relative;
+    overflow: hidden;
+  }
+  .rs-news-hero:before{
+    content:"";
+    position:absolute; inset:-40px -60px auto auto;
+    width: 240px; height: 240px;
+    border-radius: 999px;
+    background: radial-gradient(circle at 30% 30%, rgba(207,32,48,.18), rgba(207,32,48,0));
+    transform: rotate(12deg);
+  }
+  .rs-news-hero-top{
+    display:flex; align-items:flex-start; justify-content:space-between;
+    gap: 14px;
+    position: relative;
+  }
+  .rs-news-hero-title{
+    margin:0;
+    font-size: 26px;
+    line-height: 1.15;
+    letter-spacing: -.02em;
+    font-weight: 700;
+  }
+  .rs-news-hero-sub{
+    margin:8px 0 0;
+    color: var(--rs-muted, #6B7280);
+    font-size: 15px;
+    max-width: 820px;
+  }
+  .rs-news-hero-actions{
+    display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end;
+  }
+
+  /* Premium buttons */
+  .rs-btn{
+    display:inline-flex; align-items:center; gap:10px;
+    border-radius: 999px;
+    padding: 10px 14px;
+    border: 1px solid var(--rs-line, #E5E7EB);
+    background: #fff;
+    color: var(--rs-ink, #111827);
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: transform .12s ease, box-shadow .12s ease, border-color .12s ease;
+    box-shadow: 0 8px 18px rgba(17,24,39,.06);
+  }
+  .rs-btn:hover{
+    transform: translateY(-1px);
+    border-color: rgba(207,32,48,.35);
+    box-shadow: 0 12px 26px rgba(17,24,39,.10);
+  }
+  .rs-btn--primary{
+    background: var(--rs-red, #CF2030);
+    color: #fff;
+    border-color: rgba(207,32,48,.45);
+  }
+  .rs-btn--primary:hover{
+    border-color: rgba(207,32,48,.70);
+  }
+
+  /* ===== Pills / Tags ===== */
+  .rs-pill-row{
+    display:flex; gap:10px; flex-wrap:wrap;
+    margin-top: 14px;
+    position: relative;
+  }
+  .rs-pill{
+    border: 1px solid var(--rs-line, #E5E7EB);
+    background:#fff;
+    color: var(--rs-ink, #111827);
+    padding: 9px 12px;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 13px;
+    cursor:pointer;
+    transition: all .12s ease;
+    display:inline-flex; gap:8px; align-items:center;
+  }
+  .rs-pill:hover{
+    border-color: rgba(207,32,48,.35);
+    box-shadow: 0 10px 20px rgba(17,24,39,.06);
+    transform: translateY(-1px);
+  }
+  .rs-pill.is-active{
+    background: rgba(207,32,48,.10);
+    border-color: rgba(207,32,48,.25);
+    color: var(--rs-ink, #111827);
+  }
+  .rs-pill-dot{
+    width: 8px; height: 8px; border-radius: 99px;
+    background: rgba(207,32,48,.55);
+  }
+
+  /* ===== Section Titles ===== */
+  .rs-news-section-title{
+    margin: 18px 0 12px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -.01em;
+    display:flex; align-items:center; justify-content:space-between;
+    gap: 12px;
+  }
+  .rs-news-section-title small{
+    color: var(--rs-muted, #6B7280);
+    font-weight: 700;
+    font-size: 13px;
+  }
+
+  /* ===== Featured ===== */
+  .rs-featured{
+    margin-top: 16px;
+    display:grid;
+    grid-template-columns: 1.15fr .85fr;
+    gap: 14px;
+  }
+  @media(max-width: 980px){
+    .rs-featured{ grid-template-columns: 1fr; }
+  }
+  .rs-featured-card{
+    border:1px solid var(--rs-line, #E5E7EB);
+    border-radius: 22px;
+    overflow:hidden;
+    background:#fff;
+    box-shadow: 0 12px 30px rgba(17,24,39,.07);
+  }
+  .rs-featured-media{
+    width:100%;
+    display:block;
+    border-bottom: 1px solid var(--rs-line, #E5E7EB);
+  }
+  .rs-featured-body{
+    padding: 16px 16px 18px;
+  }
+  .rs-kicker{
+    display:flex; gap:8px; align-items:center; flex-wrap:wrap;
+    margin-bottom: 10px;
+  }
+  .rs-badge{
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing:.03em;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: rgba(207,32,48,.10);
+    border: 1px solid rgba(207,32,48,.18);
+  }
+  .rs-meta{
+    font-size: 13px;
+    color: var(--rs-muted, #6B7280);
+    font-weight: 700;
+  }
+  .rs-featured-title{
+    margin:0;
+    font-size: 20px;
+    letter-spacing:-.02em;
+    line-height: 1.2;
+    font-weight: 700;
+  }
+  .rs-featured-desc{
+    margin: 10px 0 0;
+    color: var(--rs-muted, #6B7280);
+    font-size: 14px;
+    line-height: 1.55;
+  }
+  .rs-featured-footer{
+    margin-top: 14px;
+    display:flex; align-items:center; justify-content:space-between; gap:12px;
+  }
+  .rs-link{
+    display:inline-flex; align-items:center; gap:10px;
+    font-weight: 700;
+    font-size: 13px;
+    color: var(--rs-red, #CF2030);
+    text-decoration:none;
+  }
+  .rs-link:hover{ text-decoration: underline; }
+
+  /* ===== Right column: Announcements ===== */
+  .rs-side{
+    border:1px solid var(--rs-line, #E5E7EB);
+    border-radius: 22px;
+    background:#fff;
+    box-shadow: 0 12px 30px rgba(17,24,39,.06);
+    padding: 14px;
+  }
+  .rs-side-list{
+    display:flex; flex-direction:column; gap:10px;
+    margin-top: 10px;
+  }
+  .rs-side-item{
+    display:flex; gap:12px; align-items:flex-start;
+    border:1px solid var(--rs-line, #E5E7EB);
+    border-radius: 16px;
+    padding: 12px;
+    background: #fff;
+    transition: transform .12s ease, box-shadow .12s ease, border-color .12s ease;
+  }
+  .rs-side-item:hover{
+    transform: translateY(-1px);
+    border-color: rgba(207,32,48,.25);
+    box-shadow: 0 12px 26px rgba(17,24,39,.08);
+  }
+  .rs-side-thumb{
+    width: 88px;
+    height: 66px;
+    border-radius: 12px;
+    border: 1px solid var(--rs-line, #E5E7EB);
+    overflow:hidden;
+    flex: 0 0 auto;
+  }
+  .rs-side-thumb img{ width:100%; height:100%; display:block; object-fit:cover; }
+  .rs-side-title{
+    margin:0;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  .rs-side-sub{
+    margin: 6px 0 0;
+    color: var(--rs-muted, #6B7280);
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  /* ===== News Grid ===== */
+  .rs-grid{
+    margin-top: 16px;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+  }
+  @media(max-width: 1020px){
+    .rs-grid{ grid-template-columns: repeat(2, 1fr); }
+  }
+  @media(max-width: 620px){
+    .rs-grid{ grid-template-columns: 1fr; }
+  }
+  .rs-post{
+    border: 1px solid var(--rs-line, #E5E7EB);
+    border-radius: 22px;
+    overflow:hidden;
+    background:#fff;
+    box-shadow: 0 12px 30px rgba(17,24,39,.05);
+    transition: transform .12s ease, box-shadow .12s ease, border-color .12s ease;
+    display:flex;
+    flex-direction:column;
+  }
+  .rs-post:hover{
+    transform: translateY(-2px);
+    border-color: rgba(207,32,48,.25);
+    box-shadow: 0 18px 38px rgba(17,24,39,.10);
+  }
+  .rs-post-media{
+    display:block;
+    width:100%;
+    border-bottom:1px solid var(--rs-line, #E5E7EB);
+  }
+  .rs-post-body{
+    padding: 14px 14px 16px;
+    display:flex;
+    flex-direction:column;
+    gap: 10px;
+    flex: 1;
+  }
+  .rs-post-title{
+    margin:0;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.25;
+    letter-spacing:-.01em;
+  }
+  .rs-post-desc{
+    margin:0;
+    color: var(--rs-muted, #6B7280);
+    font-size: 13px;
+    line-height: 1.55;
+  }
+  .rs-post-footer{
+    display:flex; align-items:center; justify-content:space-between; gap:10px;
+    margin-top: auto;
+  }
+  .rs-post-meta{
+    font-size: 12px;
+    color: var(--rs-muted, #6B7280);
+    font-weight: 700;
+  }
+
+  /* ===== Pagination ===== */
+  .rs-pagination{
+    margin: 18px 0 2px;
+    display:flex;
+    justify-content:center;
+    gap: 10px;
+    flex-wrap:wrap;
+  }
+  .rs-page{
+    min-width: 44px;
+    height: 42px;
+    border-radius: 999px;
+    border:1px solid var(--rs-line, #E5E7EB);
+    background:#fff;
+    font-weight: 700;
+    cursor:pointer;
+    box-shadow: 0 10px 18px rgba(17,24,39,.05);
+    transition: transform .12s ease, box-shadow .12s ease, border-color .12s ease;
+    padding: 0 14px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+  }
+  .rs-page:hover{
+    transform: translateY(-1px);
+    border-color: rgba(207,32,48,.25);
+    box-shadow: 0 14px 26px rgba(17,24,39,.08);
+  }
+  .rs-page.is-active{
+    background: rgba(207,32,48,.12);
+    border-color: rgba(207,32,48,.25);
+  }
+
+  /* ===== Minor helpers ===== */
+  .rs-divider{
+    height:1px;
+    background: var(--rs-line, #E5E7EB);
+    margin: 18px 0 0;
+    border-radius: 99px;
+  }
+</style>
+
+
+<section class="rs-news">
+
+  <!-- HERO -->
+  <div class="rs-news-hero">
+    <div class="rs-news-hero-top">
+      <div>
+        <h1 class="rs-news-hero-title">News & Stories</h1>
+        <p class="rs-news-hero-sub">
+          Chapter updates, growth highlights, event recaps, and the moments that make Rock Solid feel like more than a weekly meeting.
+        </p>
+      </div>
+
+
+    </div>
+
+    <!-- CATEGORIES -->
+    <div class="rs-pill-row" aria-label="News categories">
+
+      <button class="rs-pill"><span class="rs-pill-dot"></span> Chapter News</button>
+      <button class="rs-pill"><span class="rs-pill-dot"></span> Member Spotlights</button>
+      <button class="rs-pill"><span class="rs-pill-dot"></span> Events</button>
+      <button class="rs-pill"><span class="rs-pill-dot"></span> Growth Tips</button>
+      <button class="rs-pill"><span class="rs-pill-dot"></span> Announcements</button>
+    </div>
+  </div>
+
+
+  <!-- FEATURED + ANNOUNCEMENTS -->
+  <div class="rs-featured">
+
+    <!-- FEATURED STORY (Image placeholder #1) -->
+    <article class="rs-featured-card">
+      <img class="rs-featured-media" src="https://placehold.co/1200x540?text=Featured+News+Image" alt="Featured news placeholder" />
+      <div class="rs-featured-body">
+        <div class="rs-kicker">
+          <span class="rs-badge">FEATURED</span>
+          <span class="rs-meta">6 min read • Jan 2026</span>
+        </div>
+
+        <h2 class="rs-featured-title">
+          Rock Solid Momentum: What We’ve Built Together — and What’s Next
+        </h2>
+
+        <p class="rs-featured-desc">
+          A look at the wins, referrals, and relationship-building moments that defined the last few months —
+          plus how we’re leveling up in 2026 with better systems, better follow-up, and more value per meeting.
+        </p>
+
+        <div class="rs-featured-footer">
+          <a class="rs-link" href="#"><i class="fa-regular fa-newspaper"></i> Read full story</a>
+          <button class="rs-btn"><i class="fa-regular fa-share-from-square"></i> Share</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- ANNOUNCEMENTS / RIGHT COLUMN -->
+    <aside class="rs-side">
+      <div class="rs-news-section-title" style="margin-top:0">
+        Announcements
+        <small>Quick updates</small>
+      </div>
+
+      <div class="rs-side-list">
+
+        <!-- Placeholder images #2-#5 -->
+        <div class="rs-side-item">
+          <div class="rs-side-thumb">
+            <img src="https://placehold.co/176x132?text=88x66" alt="Announcement placeholder image" />
+          </div>
+          <div>
+            <h4 class="rs-side-title">New visitor protocol: making guests feel instantly welcomed</h4>
+            <p class="rs-side-sub">Jan 2026</p>
+          </div>
+        </div>
+
+        <div class="rs-side-item">
+          <div class="rs-side-thumb">
+            <img src="https://placehold.co/176x132?text=88x66" alt="Announcement placeholder image" />
+          </div>
+          <div>
+            <h4 class="rs-side-title">Monthly social night is back — bring a referral partner</h4>
+            <p class="rs-side-sub">Jan 2026</p>
+          </div>
+        </div>
+
+        <div class="rs-side-item">
+          <div class="rs-side-thumb">
+            <img src="https://placehold.co/176x132?text=88x66" alt="Announcement placeholder image" />
+          </div>
+          <div>
+            <h4 class="rs-side-title">Member app update: smoother navigation + better 1-to-1 flow</h4>
+            <p class="rs-side-sub">Jan 2026</p>
+          </div>
+        </div>
+
+        <div class="rs-side-item">
+          <div class="rs-side-thumb">
+            <img src="https://placehold.co/176x132?text=88x66" alt="Announcement placeholder image" />
+          </div>
+          <div>
+            <h4 class="rs-side-title">Power of One reminders: consistent habits, big outcomes</h4>
+            <p class="rs-side-sub">Jan 2026</p>
+          </div>
+        </div>
+
+      </div>
+    </aside>
+
+  </div>
+
+
+  <!-- NEWS GRID -->
+  <div class="rs-divider"></div>
+
+  <div class="rs-news-section-title">
+    Latest Posts
+    <small>From the chapter</small>
+  </div>
+
+  <section class="rs-grid" aria-label="News posts grid">
+
+    <!-- 9 cards below = placeholders #6-#14 -->
+    <article class="rs-post">
+      <img class="rs-post-media" src="https://placehold.co/760x420?text=Post+Image" alt="Post image placeholder" />
+      <div class="rs-post-body">
+        <div class="rs-kicker">
+          <span class="rs-badge">Member Spotlights</span>
+        </div>
+        <h3 class="rs-post-title">Meet the members driving referrals with simple consistency</h3>
+        <p class="rs-post-desc">
+          The difference isn’t talent — it’s habits. Here’s what top performers are doing weekly.
+        </p>
+        <div class="rs-post-footer">
+          <span class="rs-post-meta">5 min read</span>
+          <a class="rs-link" href="#">Read <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </article>
+
+    <article class="rs-post">
+      <img class="rs-post-media" src="https://placehold.co/760x420?text=Post+Image" alt="Post image placeholder" />
+      <div class="rs-post-body">
+        <div class="rs-kicker">
+          <span class="rs-badge">Events</span>
+        </div>
+        <h3 class="rs-post-title">Recap: the networking night that turned into real partnerships</h3>
+        <p class="rs-post-desc">
+          A simple reminder: relationships compound when you show up in person.
+        </p>
+        <div class="rs-post-footer">
+          <span class="rs-post-meta">6 min read</span>
+          <a class="rs-link" href="#">Read <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </article>
+
+    <article class="rs-post">
+      <img class="rs-post-media" src="https://placehold.co/760x420?text=Post+Image" alt="Post image placeholder" />
+      <div class="rs-post-body">
+        <div class="rs-kicker">
+          <span class="rs-badge">Tips</span>
+        </div>
+        <h3 class="rs-post-title">How to ask for referrals without sounding salesy</h3>
+        <p class="rs-post-desc">
+          Three word swaps that instantly make your ask feel natural — and more effective.
+        </p>
+        <div class="rs-post-footer">
+          <span class="rs-post-meta">4 min read</span>
+          <a class="rs-link" href="#">Read <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </article>
+
+    <article class="rs-post">
+      <img class="rs-post-media" src="https://placehold.co/760x420?text=Post+Image" alt="Post image placeholder" />
+      <div class="rs-post-body">
+        <div class="rs-kicker">
+          <span class="rs-badge">Chapter News</span>
+        </div>
+        <h3 class="rs-post-title">New meeting segments: more value in less time</h3>
+        <p class="rs-post-desc">
+          Small adjustments to flow and timing so meetings feel tighter, sharper, and more premium.
+        </p>
+        <div class="rs-post-footer">
+          <span class="rs-post-meta">3 min read</span>
+          <a class="rs-link" href="#">Read <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </article>
+
+    <article class="rs-post">
+      <img class="rs-post-media" src="https://placehold.co/760x420?text=Post+Image" alt="Post image placeholder" />
+      <div class="rs-post-body">
+        <div class="rs-kicker">
+          <span class="rs-badge">Memmber Spotlights</span>
+        </div>
+        <h3 class="rs-post-title">What “premium” follow-up actually looks like (with templates)</h3>
+        <p class="rs-post-desc">
+          Your first follow-up message sets the tone for the entire relationship — here’s the standard.
+        </p>
+        <div class="rs-post-footer">
+          <span class="rs-post-meta">7 min read</span>
+          <a class="rs-link" href="#">Read <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </article>
+
+    <article class="rs-post">
+      <img class="rs-post-media" src="https://placehold.co/760x420?text=Post+Image" alt="Post image placeholder" />
+      <div class="rs-post-body">
+        <div class="rs-kicker">
+          <span class="rs-badge">Events</span>
+        </div>
+        <h3 class="rs-post-title">Visitor day playbook: how to make the room unforgettable</h3>
+        <p class="rs-post-desc">
+          A premium visitor experience is engineered — not improvised. Here’s the exact flow.
+        </p>
+        <div class="rs-post-footer">
+          <span class="rs-post-meta">6 min read</span>
+          <a class="rs-link" href="#">Read <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </article>
+
+    <article class="rs-post">
+      <img class="rs-post-media" src="https://placehold.co/760x420?text=Post+Image" alt="Post image placeholder" />
+      <div class="rs-post-body">
+        <div class="rs-kicker">
+          <span class="rs-badge">Tips</span>
+        </div>
+        <h3 class="rs-post-title">The one routine that makes 1-to-1s actually productive</h3>
+        <p class="rs-post-desc">
+          If your 1-to-1s drift into “catch up” mode, this resets them into a referral engine.
+        </p>
+        <div class="rs-post-footer">
+          <span class="rs-post-meta">5 min read</span>
+          <a class="rs-link" href="#">Read <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </article>
+
+    <article class="rs-post">
+      <img class="rs-post-media" src="https://placehold.co/760x420?text=Post+Image" alt="Post image placeholder" />
+      <div class="rs-post-body">
+        <div class="rs-kicker">
+          <span class="rs-badge">Chapter News</span>
+        </div>
+        <h3 class="rs-post-title">New member resources: referral language, scripts, and best practices</h3>
+        <p class="rs-post-desc">
+          We’re building a better library — so every member can sound confident and consistent.
+        </p>
+        <div class="rs-post-footer">
+          <span class="rs-post-meta">4 min read</span>
+          <a class="rs-link" href="#">Read <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </article>
+
+    <article class="rs-post">
+      <img class="rs-post-media" src="https://placehold.co/760x420?text=Post+Image" alt="Post image placeholder" />
+      <div class="rs-post-body">
+        <div class="rs-kicker">
+          <span class="rs-badge">Member Spotlight</span>
+        </div>
+        <h3 class="rs-post-title">A simple introduction strategy that’s generating weekly wins</h3>
+        <p class="rs-post-desc">
+          Most people wait for referrals. This method creates them — without asking awkwardly.
+        </p>
+        <div class="rs-post-footer">
+          <span class="rs-post-meta">6 min read</span>
+          <a class="rs-link" href="#">Read <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </article>
+
+  </section>
+
+
+  <!-- PAGINATION -->
+  <div class="rs-pagination" aria-label="Pagination">
+    <button class="rs-page"><i class="fa-solid fa-arrow-left"></i> Prev</button>
+    <button class="rs-page is-active">1</button>
+    <button class="rs-page">2</button>
+    <button class="rs-page">3</button>
+    <button class="rs-page">4</button>
+    <button class="rs-page">Next <i class="fa-solid fa-arrow-right"></i></button>
+  </div>
+
+</section>
+
+
+<!--end-->
+
+
+
+<footer class="rs-footer" role="contentinfo">
+  <div class="rs-footer__inner">
+
+    <div class="rs-footer__grid">
+
+      <!-- Brand -->
+      <div class="rs-footer__brand">
+        <img
+          class="rs-footer__logo"
+          src="https://d34hmiuaex7c0.cloudfront.net/6568/uploads/cmaspages/gallery/galleryitem_1768573585550.515"
+          alt="BNI Rock Solid Referrals"
+        />
+        <p class="rs-footer__desc">
+          BNI Rock Solid Referrals is a structured network of trusted local professionals —
+          built on consistency, credibility, and referrals that convert.
+        </p>
+      </div>
+
+      <!-- Explore -->
+      <div class="rs-footer__col">
+        <h4>Explore</h4>
+        <a href="https://kakatbarilea-prog.github.io/bni-homepage/">Home</a>
+        <a href="https://kakatbarilea-prog.github.io/bni-chapter-leadership/">Chapter Leadership</a>
+        <a href="https://kakatbarilea-prog.github.io/bni-weekly-meetings">Weekly Meetings</a>
+        <a href="https://kakatbarilea-prog.github.io/bni-upcoming-events">Upcoming Events</a>
+        <a href="https://kakatbarilea-prog.github.io/bni-gallery">Gallery</a>
+        <a href="https://kakatbarilea-prog.github.io/bni-news">News</a>
+      </div>
+
+      <!-- Members -->
+      <div class="rs-footer__col">
+        <h4>Members</h4>
+        <a href="https://kakatbarilea-prog.github.io/bni-member-login">Member Log-in</a>
+        <a href="https://kakatbarilea-prog.github.io/bni-chamber-members-directory/">Member Directory</a>
+        <a href="https://kakatbarilea-prog.github.io/bni-chamber-members-directory" class="rs-membersOnlyLink">Request a 1-to-1</a>
+        <a href="https://kakatbarilea-prog.github.io/bni-chamber-members-directory" class="rs-membersOnlyLink">Share a Referral</a>
+
+        <!-- ✅ ADDED HERE per your request -->
+        <a href="https://kakatbarilea-prog.github.io/bni-member-events" class="rs-membersOnlyLink">Member Promotions &amp; Events</a>
+        <a href="https://kakatbarilea-prog.github.io/bni-post-an-event" class="rs-membersOnlyLink">Post an Event</a>
+
+        <a href="https://kakatbarilea-prog.github.io/bni-seek-of-the-week-page/" class="rs-membersOnlyLink">Submit Seek of the Week</a>
+        <a href="https://kakatbarilea-prog.github.io/bni-seek-of-the-week-submissions/" class="rs-membersOnlyLink">View Seeks of the Week</a>
+      </div>
+
+    </div>
+
+    <div class="rs-footer__bottom">
+      <div class="rs-footer__bottomLeft">
+        © <span id="rsFooterYear"></span> BNI Rock Solid Referrals&nbsp;&nbsp;•&nbsp;&nbsp;Powered by Segwik
+      </div>
+
+      <div class="rs-footer__bottomRight">
+        <a href="#">Privacy Policy</a>
+        <span class="rs-footer__sep">|</span>
+        <a href="#">Terms &amp; Conditions</a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+<!-- MEMBERS ONLY POPUP (FOOTER VERSION) -->
+<div class="rsF-membersModal" id="rsFMembersModal" hidden aria-hidden="true">
+  <div class="rsF-membersModal__backdrop" data-close="1"></div>
+
+  <div class="rsF-membersModal__card" role="dialog" aria-modal="true" aria-label="Members only">
+    <div class="rsF-membersModal__badge">Members Only</div>
+    <div class="rsF-membersModal__title">This page is available to chapter members.</div>
+    <div class="rsF-membersModal__text">
+      Please log in to access member pages such as Seeks, Member Events, and Event Submissions.
+    </div>
+
+    <div class="rsF-membersModal__actions">
+      <button class="rsF-membersModal__btn rsF-membersModal__btn--secondary" type="button" data-close="1">
+        Close &amp; Continue
+      </button>
+      <a class="rsF-membersModal__btn rsF-membersModal__btn--primary" href="https://kakatbarilea-prog.github.io/bni-member-login" id="rsFModalLoginBtn">
+        Member Log-in
+      </a>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* -------- FOOTER ONLY VARIABLES (scoped) -------- */
+  .rs-footer{
+    --rs-red:#CF2030;
+    --rs-bg:#333333;
+    --rs-text:#ffffff;
+    --rs-muted: rgba(255,255,255,.82);
+    --rs-line: rgba(255,255,255,.14);
+  }
+
+  /* Scope all typography + box sizing to footer only */
+  .rs-footer, .rs-footer *{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing:border-box;
+  }
+
+  .rs-footer{
+    width:100%;
+    background: var(--rs-bg);
+    color: var(--rs-text);
+    border-top: 4px solid var(--rs-red);
+  }
+
+  .rs-footer__inner{
+    width:100%;
+    max-width:1200px;
+    margin:0 auto;
+    padding:42px 22px 18px;
+  }
+
+  .rs-footer__grid{
+    display:grid;
+    grid-template-columns: 2.2fr 1fr 1fr;
+    gap:28px;
+    align-items:start;
+  }
+
+  .rs-footer__logo{
+    height:34px;
+    width:auto;
+    max-width:220px;
+    object-fit:contain;
+    display:block;
+  }
+
+  .rs-footer__desc{
+    margin:12px 0 0;
+    font-weight:400;
+    font-size:14px;
+    line-height:1.6;
+    max-width:560px;
+    color: var(--rs-muted);
+  }
+
+  .rs-footer__col h4{
+    margin:0 0 12px;
+    font-size:13px;
+    font-weight:600;
+    letter-spacing:.06em;
+    text-transform:uppercase;
+    color:#fff;
+    position:relative;
+  }
+  .rs-footer__col h4::after{
+    content:"";
+    display:block;
+    width:42px;
+    height:2px;
+    border-radius:999px;
+    background: var(--rs-red);
+    margin-top:10px;
+    opacity:.95;
+  }
+
+  .rs-footer__col a{
+    display:block;
+    width:max-content;
+    margin:10px 0;
+    font-weight:400;
+    font-size:14px;
+    color: var(--rs-muted);
+    text-decoration:none;
+    transition:.15s ease;
+  }
+  .rs-footer__col a:hover{
+    color:#fff;
+    text-decoration:underline;
+    text-underline-offset:3px;
+  }
+
+  .rs-footer__bottom{
+    margin-top:22px;
+    padding-top:14px;
+    border-top:1px solid var(--rs-line);
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+    flex-wrap:wrap;
+    font-size:13px;
+    color: var(--rs-muted);
+  }
+
+  .rs-footer__bottomLeft{font-weight:400}
+
+  .rs-footer__bottomRight{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-weight:400;
+  }
+  .rs-footer__bottomRight a{
+    color: var(--rs-muted);
+    text-decoration:none;
+    transition:.15s ease;
+  }
+  .rs-footer__bottomRight a:hover{
+    color:#fff;
+    text-decoration:underline;
+    text-underline-offset:3px;
+  }
+  .rs-footer__sep{opacity:.5}
+
+  @media (max-width: 860px){
+    .rs-footer__grid{
+      grid-template-columns: 1fr 1fr;
+    }
+    .rs-footer__brand{
+      grid-column: 1 / -1;
+    }
+  }
+
+  @media (max-width: 520px){
+    .rs-footer__inner{
+      padding:34px 16px 14px;
+    }
+
+    .rs-footer__grid{
+      grid-template-columns: 1fr;
+      gap:18px;
+    }
+
+    .rs-footer__col{
+      padding-top:10px;
+      border-top:1px solid rgba(255,255,255,.10);
+    }
+
+    .rs-footer__col a{
+      width:100%;
+      padding:10px 0;
+      margin:0;
+    }
+
+    .rs-footer__bottom{
+      flex-direction:column;
+      align-items:flex-start;
+      gap:8px;
+    }
+  }
+
+  /* =========================
+     FOOTER MODAL (unique classes)
+  ========================= */
+  .rsF-membersModal{
+    position:fixed;
+    inset:0;
+    z-index:5000;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:18px;
+  }
+  .rsF-membersModal[hidden]{display:none !important;}
+
+  .rsF-membersModal__backdrop{
+    position:absolute;
+    inset:0;
+    background: rgba(17,24,39,.62);
+    backdrop-filter: blur(4px);
+  }
+
+  .rsF-membersModal__card{
+    position:relative;
+    width:100%;
+    max-width:420px;
+    border-radius:20px;
+    border:1px solid rgba(229,231,235,.55);
+    background:#fff;
+    box-shadow: 0 22px 56px rgba(0,0,0,.22);
+    padding:18px 18px 16px;
+    text-align:left;
+  }
+
+  .rsF-membersModal__badge{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:8px 12px;
+    border-radius:999px;
+    font-weight:900;
+    font-size:12px;
+    letter-spacing:.02em;
+    color:#CF2030;
+    background: rgba(207,32,48,.10);
+    border: 1px solid rgba(207,32,48,.18);
+    margin-bottom:12px;
+  }
+
+  .rsF-membersModal__title{
+    font-size:16px;
+    font-weight:900;
+    color:#111827;
+    margin-bottom:8px;
+  }
+
+  .rsF-membersModal__text{
+    font-size:14px;
+    line-height:1.6;
+    color:#4B5563;
+    margin-bottom:14px;
+  }
+
+  .rsF-membersModal__actions{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    margin-top:8px;
+  }
+
+  .rsF-membersModal__btn{
+    display:inline-flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    gap:8px !important;
+    padding:11px 14px !important;
+    border-radius:14px !important;
+    font-weight:900 !important;
+    font-size:13px !important;
+    text-decoration:none !important;
+    cursor:pointer !important;
+    border:1px solid #E5E7EB !important;
+    transition:.18s ease !important;
+    flex:1 !important;
+    min-width:160px !important;
+    line-height:1 !important;
+  }
+
+  .rsF-membersModal__btn--secondary{
+    background:#F3F4F6 !important;
+    color:#111827 !important;
+    border-color:#E5E7EB !important;
+  }
+
+  /* ✅ HARD FIX: anchor login button forced red + white */
+  .rsF-membersModal__btn--primary,
+  a.rsF-membersModal__btn--primary,
+  a#rsFModalLoginBtn{
+    background:#CF2030 !important;
+    color:#ffffff !important;
+    border-color:transparent !important;
+  }
+  .rsF-membersModal__btn--primary:hover,
+  a.rsF-membersModal__btn--primary:hover,
+  a#rsFModalLoginBtn:hover{
+    background:#b61b29 !important;
+    color:#ffffff !important;
+  }
+</style>
+
+<script>
+  document.getElementById("rsFooterYear").textContent = new Date().getFullYear();
+
+  // FOOTER MODAL GATING (self-contained)
+  (function(){
+    const modal = document.getElementById('rsFMembersModal');
+    if(!modal) return;
+
+    const modalLoginBtn = document.getElementById('rsFModalLoginBtn');
+    if(modalLoginBtn) modalLoginBtn.setAttribute('href', '#');
+
+    modal.setAttribute('hidden','');
+    modal.setAttribute('aria-hidden','true');
+
+    function openModal(){
+      modal.removeAttribute('hidden');
+      modal.setAttribute('aria-hidden','false');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal(){
+      modal.setAttribute('hidden','');
+      modal.setAttribute('aria-hidden','true');
+      document.body.style.overflow = '';
+    }
+
+    document.addEventListener('click', function(e){
+      const gated = e.target.closest('.rs-membersOnlyLink');
+      if(!gated) return;
+      e.preventDefault();
+      openModal();
+    });
+
+    modal.addEventListener('click', function(e){
+      if(e.target && e.target.getAttribute('data-close') === '1') closeModal();
+    });
+
+    document.addEventListener('keydown', function(e){
+      if(e.key === 'Escape' && !modal.hasAttribute('hidden')) closeModal();
+    });
+  })();
+</script>
 
